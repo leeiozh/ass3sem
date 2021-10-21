@@ -1,6 +1,6 @@
 #include <iostream>
 
-unsigned int tmp = 405040540;
+float tmp = -1./0.;
 int loop = 0;
 
 int main() {
