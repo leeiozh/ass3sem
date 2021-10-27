@@ -1,7 +1,8 @@
 #include <iostream>
 #include <array>
+#include "cmath"
 
-float tmp = -1./0.;
+float tmp = 0./0.;
 int loop = 0;
 std::array<int, 32> arr;
 

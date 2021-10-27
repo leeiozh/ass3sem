@@ -34,7 +34,7 @@ double pi4(int n) {
     }
 }
 
-double pi_ = 3.;
+float pi_ = 3.;
 
 int main() {
 
