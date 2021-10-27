@@ -1,7 +1,9 @@
 #include <iostream>
+#include <array>
 
 float tmp = -1./0.;
 int loop = 0;
+std::array<int, 32> arr;
 
 int main() {
 
@@ -26,18 +28,22 @@ int main() {
     "jmp NEQ\n"
 
     "EQ:\n");
-
-    std::cout << 1 << std::endl;
+    arr[loop - 1] = 1;
 
     asm(
     "jmp master\n"
     "NEQ:\n");
-    std::cout << 0 << std::endl;
+    arr[loop - 1] = 0;
     asm(
     "jmp master\n"
     "end:\n"
 
     );
+
+    for (int i = 0; i < 31; i++){
+        std::cout << arr[i];
+    }
+    std::cout << std::endl;
 
     return 0;
 }

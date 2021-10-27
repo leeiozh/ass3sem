@@ -1,7 +1,7 @@
 #include <iostream>
 #include <array>
 
-unsigned int tmp = 405040540;
+float tmp = 0.2;
 int loop = 0;
 std::array<int, 32> arr;
 

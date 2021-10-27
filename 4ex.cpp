@@ -1,11 +1,13 @@
 #include <iostream>
 #include <array>
 
-unsigned int tmp = 405040540;
+float tmp = 1.e-40;
+
 int loop = 0;
 std::array<int, 32> arr;
 
 int main() {
+    tmp += 1.e40;
 
     asm(
 
@@ -47,4 +49,3 @@ int main() {
 
     return 0;
 }
-
