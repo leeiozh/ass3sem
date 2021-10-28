@@ -34,17 +34,15 @@ double pi4(int n) {
     }
 }
 
-float pi_ = 3.;
+double pi_ = 3.;
 
 int main() {
 
-    for (int i = 0; i < 1e5; i += 1) {
+    for (int i = 0; i < 3e2; i += 1) {
         pi_ += pi4(i);
-        if (i % 50 == 0) {
-            std::cout << std::fixed << std::showpoint;
-            std::cout << std::setprecision(10);
-            std::cout << i << " " << pi_ << std::endl;
-        }
+        std::cout << std::fixed << std::showpoint;
+        std::cout << std::setprecision(20);
+        std::cout << i << " " << pi_ << std::endl;
     }
 
     return 0;
