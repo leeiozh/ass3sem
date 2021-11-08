@@ -2,7 +2,7 @@
 #include <array>
 #include "cmath"
 
-float tmp = 0./0.;
+float tmp = 0.3;
 int loop = 0;
 std::array<int, 32> arr;
 
