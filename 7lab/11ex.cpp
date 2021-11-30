@@ -10,11 +10,19 @@ int main(){
         VIOLET
     };
 
-    rainbow rain_red = RED;
-    rainbow rain_or = ORANGE;
-    rainbow rain_vio = VIOLET;
+    enum rainbow2 {
+        RED2,
+        ORANGE2,
+        YELLOW2,
+        GREEN2,
+        BLUE2,
+        INDIGO2,
+        VIOLE2T
+    };
 
-    rain_red + rain_or;
+
+    rainbow2 rain_vio = static_cast<rainbow2> (RED + RED2);
+
 
     return 0;
 }
